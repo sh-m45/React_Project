@@ -26,12 +26,7 @@ export default function Header(props) {
                                 <li className="nav-item px-2">
                                     <NavLink className="nav-link" to={'/display'}>Display</NavLink>
                                 </li>
-                                <li className="nav-item px-2">
-                                    <NavLink className="nav-link" to={'/add'}>Add</NavLink>
-                                </li>
-                                <li className="nav-item px-2">
-                                    <NavLink className="nav-link" to={'/update'}>Update</NavLink>
-                                </li>
+                               
 
                             </> : ''}
 
@@ -43,6 +38,7 @@ export default function Header(props) {
                                         <a  onClick={props.logOut} className="nav-link"  >Logout</a>
                                     </li>
                                 </> : <>
+                                    
                                     <li className="nav-item px-2">
                                         <NavLink className="nav-link" to={'/register'}>Register</NavLink>
                                     </li>

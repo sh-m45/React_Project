@@ -13,8 +13,7 @@ import Display from './Display/Display';
 import Home from './Home/Home';
 import Register from './Register/Register';
 import Login from './Login/Login';
-import Update from './Update/Update';
-import Add from './Add/Add';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import '../node_modules/@fortawesome/free-solid-svg-icons/faSpinner'
 

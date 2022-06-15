@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import jwtDecode from 'jwt-decode';
 import { NavLink, Route, Routes, useNavigate } from 'react-router-dom';
-import Add from '../Add/Add';
+
 import Display from '../Display/Display';
 import Home from '../Home/Home';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
-import Update from '../Update/Update';
 import Header from './Header';
 import { render } from '@testing-library/react';
 export default function Routing() {
@@ -25,7 +24,7 @@ export default function Routing() {
     function logOut() {
         localStorage.removeItem('userToken');
         setUserData(null);
-        // navigate('login');
+ 
 
     }
 
@@ -34,17 +33,15 @@ export default function Routing() {
 
     return (
         <>
-            {/* logOut={logOut}  */}
+            
             <Header userData={userData} logOut={logOut} />
             <Routes >
                 <Route path="/" exact element={ <Home />} />
                 <Route path="/home" element={<Home />} />
-                {/* <Route path="/update" element={<Update />} /> */}
                 <Route path="/display" element={<Display />} />
-                {/* setUserData={setUserData}  */}
                 <Route path="/login" element={<Login getUserData={getUserData} />} />
                 <Route path="/register" element={<Register />} />
-                {/* <Route path="/add" element={<Add />} /> */}
+                
 
             </Routes>
         </>
